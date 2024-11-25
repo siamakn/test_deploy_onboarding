@@ -1,0 +1,83 @@
+definitions:
+  name: My spincoating ELN
+  description: This is an electronic lab notebook for documenting polymer thin films samples prepared by spincoating
+  sections:
+    polymer_thin_films:
+      base_sections:
+          - nomad.datamodel.data.EntryData
+      quantities:
+        Sample ID:
+            type: str
+            m_annotations:
+                eln:
+                    component: StringEditQuantity
+        Creation time:
+            type: Datetime
+            m_annotations:
+                eln:
+                    component: DateTimeEditQuantity
+        Substrate: 
+            type:
+                type_kind: Enum
+                type_data:
+                    - 'glass'
+                    - 'ITO'
+            m_annotations:
+                eln:
+                    component: RadioEnumEditQuantity
+        Substrate cleaning procedure:
+            type: str
+            m_annotations:
+                eln:
+                    component: RichTextEditQuantity
+        Solute:
+            type:
+                type_kind: Enum
+                type_data:
+                    - 'Regioregular P3HT'
+                    - 'Regiorandom P3HT'
+            m_annotations:
+                eln:
+                    component: RadioEnumEditQuantity
+        Solvent:
+            type:
+                type_kind: Enum
+                type_data:
+                    - 'Chloroform'
+                    - 'Dichlorobenzene'
+            m_annotations:
+                eln:
+                    component: RadioEnumEditQuantity
+        Solution concentration:
+            type: np.float64
+            unit: mg/ml
+            m_annotations:
+                eln:
+                    component: NumberEditQuantity
+                    defaultDisplayUnit: "mg/ml"
+        Spin coating speed:
+            type: np.float64
+            unit: rpm
+            m_annotations:
+                eln:
+                    component: NumberEditQuantity
+                    defaultDisplayUnit: "rpm"
+        Spin coating acceleration:
+            type: np.float64
+            unit: rpm / second
+            m_annotations:
+                eln:
+                    component: NumberEditQuantity
+                    defaultDisplayUnit: "rpm/s"
+        Film thickness:
+            type: np.float64
+            unit: nm
+            m_annotations:
+                eln:
+                component: NumberEditQuantity
+                defaultDisplayUnit: "nm"
+        Comments:
+            type: str
+            m_annotations:
+                eln:
+                    component: RichTextEditQuantity
