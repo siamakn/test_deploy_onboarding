@@ -23,6 +23,5 @@ Welcome to the NOMAD Onboarding Workshop! This workshop is designed to introduce
 
 Each module provides hands-on exercises and guides to help you understand and effectively utilize NOMAD's features in your research workflow.
 
-??? info "Note: Repository Under Continuous Development"
-    This repository is currently under development. The contents are subject to updates and improvements. Please check back regularly for the latest materials and features.
+Please note: This repository is currently under continuous development. The contents are subject to updates and improvements. Please check back regularly for the latest materials and features.
 
