@@ -1,4 +1,4 @@
-# Research Data Management with NOMAD (test)
+# Research Data Management with NOMAD
 
 ## **Towards FAIR Research Data with NOMAD**
 
